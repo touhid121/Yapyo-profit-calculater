@@ -1,0 +1,134 @@
+body {
+    font-family: MuseoModerno, sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #FE7743;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.container {
+    width: 280px;
+    min-height: 320px; /* Changed from fixed height to min-height */
+    height: auto; /* Allow container to expand */
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 10px; /* Increased padding for better spacing */
+    border-radius: 6px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 2px black;
+    background: #807b78;
+}
+
+label {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    display: block;
+    width: 180px;
+    margin: 8px auto 0;
+    padding: 6px 5px;
+    border-radius: 5px;
+    background: #F9FAFB;
+    color: #141414;
+}
+
+button {
+    margin: 8px auto 0;
+    padding: 5px;
+    color: #FE7743;
+    font-weight: bold;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #FE7743;
+}
+
+button:hover {
+    background: #FE7743;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+/* New styles for the results list */
+#ul-el {
+    margin: 15px 0 0 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+#ul-el li {
+    margin: 8px 0;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+#ul-el li:first-child {
+    background: rgba(254, 119, 67, 0.3);
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        padding: 40px 0;
+    }
+    
+    .container {
+        width: 400px;
+        min-height: 420px;
+        padding: 25px 20px;
+        margin-top: 50px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    label {
+        font-size: 18px;
+    }
+    
+    input {
+        width: 250px;
+        padding: 10px 8px;
+        font-size: 16px;
+        margin: 12px auto 0;
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 15px auto 0;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+    }
+    
+    #ul-el {
+        font-size: 16px;
+        margin: 20px 0 0 0;
+    }
+    
+    #ul-el li {
+        margin: 10px 0;
+        padding: 8px 10px;
+        border-radius: 5px;
+    }
+}
